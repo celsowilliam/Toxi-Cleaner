@@ -1,0 +1,43 @@
+{
+  "url_pendentes": "https://cx.gamersclub.com.br/admin/toxicidade/pendente",
+  "url_base": "https://cx.gamersclub.com.br",
+
+  "_comentario_whitelist": "Domínios/trechos de URL que, se aparecerem em 'Provas', contam como prova real (video/print/audio). O bot NUNCA marca como invalido se achar um desses - ele pula e deixa para revisão manual, pois julgar o conteúdo é humano.",
+  "whitelist_dominios": [
+    "youtube.com",
+    "youtu.be",
+    "streamable.com",
+    "imgur.com",
+    "medal.tv",
+    "prnt.sc",
+    "gyazo.com",
+    "twitch.tv",
+    "clips.twitch.tv",
+    "drive.google.com",
+    "cdn.discordapp.com",
+    "media.discordapp.net",
+    "ibb.co",
+    "postimg.cc",
+    "dropbox.com"
+  ],
+
+  "_comentario_blacklist": "Trechos de URL que, mesmo parecendo um link, NAO servem como prova. Se 'Provas' so tiver links destes (ou nenhum link), o report e considerado INVALIDO.",
+  "blacklist_padroes": [
+    "gamersclub.com.br/lobby/match",
+    "gamersclub.com.br/player",
+    "google.com/search",
+    "google.com",
+    "bing.com",
+    "steamcommunity.com"
+  ],
+
+  "_comentario_ambiguos": "Qualquer link que nao esteja nem na whitelist nem na blacklist cai aqui: o bot NAO decide sozinho, so sinaliza 'revisao manual' no log e pula o report. Ex: gamersclub.com.br/report/... ainda nao confirmado por voce.",
+
+  "resultado_invalido_texto_opcao": "Inválido",
+  "comentario_staff_template": "Bot - {inicial}",
+  "texto_botao_notificar": "Notificar report inválido",
+  "url_analisar_template": "https://cx.gamersclub.com.br/admin/toxicidade/analisar/{id}",
+
+  "pasta_perfil_navegador": "browser_profile",
+  "arquivo_log_csv": "logs/processed_reports.csv"
+}

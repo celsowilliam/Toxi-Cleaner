@@ -1,0 +1,1628 @@
+('C:\\Users\\Gamers '
+ 'Club\\Desktop\\gc_toxicidade_bot\\build\\gc_toxicidade_bot\\gc_toxicidade_bot.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\build\\gc_toxicidade_bot\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\build\\gc_toxicidade_bot\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\build\\gc_toxicidade_bot\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\build\\gc_toxicidade_bot\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\build\\gc_toxicidade_bot\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\build\\gc_toxicidade_bot\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('app',
+   'C:\\Users\\Gamers Club\\Desktop\\gc_toxicidade_bot\\app.py',
+   'PYSOURCE'),
+  ('selenium\\webdriver\\common\\windows\\selenium-manager.exe',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\windows\\selenium-manager.exe',
+   'BINARY'),
+  ('python314.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\python314.dll',
+   'BINARY'),
+  ('select.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_zstd.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_zstd.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_wmi.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_uuid.pyd',
+   'EXTENSION'),
+  ('_cffi_backend.cp314-win_amd64.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\_cffi_backend.cp314-win_amd64.pyd',
+   'EXTENSION'),
+  ('_tkinter.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_tkinter.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\libcrypto-3.dll',
+   'BINARY'),
+  ('libssl-3.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\libssl-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('tcl90.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\tcl90.dll',
+   'BINARY'),
+  ('libtommath.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\libtommath.dll',
+   'BINARY'),
+  ('tcl9tk90.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\tcl9tk90.dll',
+   'BINARY'),
+  ('zlib1.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\zlib1.dll',
+   'BINARY'),
+  ('selenium-4.47.0.dist-info\\INSTALLER',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium-4.47.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('selenium-4.47.0.dist-info\\LICENSE',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium-4.47.0.dist-info\\LICENSE',
+   'DATA'),
+  ('selenium-4.47.0.dist-info\\METADATA',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium-4.47.0.dist-info\\METADATA',
+   'DATA'),
+  ('selenium-4.47.0.dist-info\\NOTICE',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium-4.47.0.dist-info\\NOTICE',
+   'DATA'),
+  ('selenium-4.47.0.dist-info\\RECORD',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium-4.47.0.dist-info\\RECORD',
+   'DATA'),
+  ('selenium-4.47.0.dist-info\\REQUESTED',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium-4.47.0.dist-info\\REQUESTED',
+   'DATA'),
+  ('selenium-4.47.0.dist-info\\WHEEL',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium-4.47.0.dist-info\\WHEEL',
+   'DATA'),
+  ('selenium\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\__init__.py',
+   'DATA'),
+  ('selenium\\common\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\common\\__init__.py',
+   'DATA'),
+  ('selenium\\common\\exceptions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\common\\exceptions.py',
+   'DATA'),
+  ('selenium\\py.typed',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\py.typed',
+   'DATA'),
+  ('selenium\\webdriver\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\__init__.pyi',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\__init__.pyi',
+   'DATA'),
+  ('selenium\\webdriver\\chrome\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chrome\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\chrome\\__init__.pyi',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chrome\\__init__.pyi',
+   'DATA'),
+  ('selenium\\webdriver\\chrome\\options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chrome\\options.py',
+   'DATA'),
+  ('selenium\\webdriver\\chrome\\remote_connection.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chrome\\remote_connection.py',
+   'DATA'),
+  ('selenium\\webdriver\\chrome\\service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chrome\\service.py',
+   'DATA'),
+  ('selenium\\webdriver\\chrome\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chrome\\webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\chromium\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chromium\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\chromium\\options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chromium\\options.py',
+   'DATA'),
+  ('selenium\\webdriver\\chromium\\remote_connection.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chromium\\remote_connection.py',
+   'DATA'),
+  ('selenium\\webdriver\\chromium\\service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chromium\\service.py',
+   'DATA'),
+  ('selenium\\webdriver\\chromium\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\action_chains.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\action_chains.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\action_builder.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\action_builder.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\input_device.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\input_device.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\interaction.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\interaction.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\key_actions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\key_actions.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\key_input.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\key_input.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\mouse_button.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\mouse_button.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\pointer_actions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\pointer_actions.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\pointer_input.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\pointer_input.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\wheel_actions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\wheel_actions.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\actions\\wheel_input.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\wheel_input.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\alert.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\alert.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\api_request_context.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\api_request_context.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi-mutation-listener.js',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi-mutation-listener.js',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\_event_manager.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\_event_manager.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\_network_handlers.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\_network_handlers.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\_script_handlers.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\_script_handlers.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\bluetooth.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\bluetooth.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\browser.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\browser.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\browsing_context.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\browsing_context.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\cdp.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\cdp.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\common.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\common.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\console.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\console.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\input.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\input.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\log.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\log.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\network.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\network.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\permissions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\permissions.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\script.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\script.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\session.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\session.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\speculation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\speculation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\user_agent_client_hints.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\user_agent_client_hints.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\bidi\\webextension.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\bidi\\webextension.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\by.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\by.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\desired_capabilities.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\desired_capabilities.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\latest\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\latest\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\accessibility.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\accessibility.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\animation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\animation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\audits.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\audits.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\autofill.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\autofill.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\background_service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\background_service.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\bluetooth_emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\bluetooth_emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\browser.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\browser.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\cache_storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\cache_storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\cast.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\cast.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\console.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\console.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\crash_report_context.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\crash_report_context.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\css.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\css.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\debugger.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\debugger.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\device_access.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\device_access.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\device_orientation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\device_orientation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\dom.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\dom.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\dom_debugger.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\dom_debugger.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\dom_snapshot.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\dom_snapshot.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\dom_storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\dom_storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\event_breakpoints.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\event_breakpoints.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\extensions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\extensions.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\fed_cm.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\fed_cm.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\fetch.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\fetch.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\file_system.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\file_system.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\headless_experimental.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\headless_experimental.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\heap_profiler.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\heap_profiler.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\indexed_db.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\indexed_db.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\input_.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\input_.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\inspector.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\inspector.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\io.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\io.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\layer_tree.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\layer_tree.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\log.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\log.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\media.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\media.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\memory.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\memory.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\network.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\network.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\overlay.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\overlay.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\page.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\page.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\performance.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\performance.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\performance_timeline.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\performance_timeline.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\preload.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\preload.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\profiler.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\profiler.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\pwa.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\pwa.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\py.typed',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\py.typed',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\runtime.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\runtime.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\schema.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\schema.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\security.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\security.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\service_worker.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\service_worker.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\smart_card_emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\smart_card_emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\system_info.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\system_info.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\target.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\target.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\tethering.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\tethering.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\tracing.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\tracing.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\util.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\util.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\web_audio.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\web_audio.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\web_authn.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\web_authn.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v149\\web_mcp.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v149\\web_mcp.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\accessibility.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\accessibility.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\ads.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\ads.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\animation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\animation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\audits.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\audits.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\autofill.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\autofill.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\background_service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\background_service.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\bluetooth_emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\bluetooth_emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\browser.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\browser.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\cache_storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\cache_storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\cast.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\cast.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\console.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\console.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\crash_report_context.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\crash_report_context.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\css.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\css.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\debugger.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\debugger.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\device_access.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\device_access.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\device_orientation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\device_orientation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\dom.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\dom.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\dom_debugger.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\dom_debugger.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\dom_snapshot.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\dom_snapshot.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\dom_storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\dom_storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\event_breakpoints.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\event_breakpoints.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\extensions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\extensions.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\fed_cm.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\fed_cm.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\fetch.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\fetch.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\file_system.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\file_system.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\headless_experimental.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\headless_experimental.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\heap_profiler.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\heap_profiler.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\indexed_db.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\indexed_db.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\input_.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\input_.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\inspector.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\inspector.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\io.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\io.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\layer_tree.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\layer_tree.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\log.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\log.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\media.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\media.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\memory.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\memory.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\network.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\network.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\overlay.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\overlay.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\page.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\page.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\performance.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\performance.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\performance_timeline.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\performance_timeline.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\preload.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\preload.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\profiler.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\profiler.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\pwa.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\pwa.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\py.typed',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\py.typed',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\runtime.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\runtime.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\schema.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\schema.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\security.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\security.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\service_worker.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\service_worker.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\smart_card_emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\smart_card_emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\system_info.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\system_info.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\target.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\target.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\tethering.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\tethering.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\tracing.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\tracing.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\util.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\util.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\web_audio.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\web_audio.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\web_authn.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\web_authn.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v150\\web_mcp.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v150\\web_mcp.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\accessibility.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\accessibility.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\ads.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\ads.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\animation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\animation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\audits.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\audits.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\autofill.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\autofill.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\background_service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\background_service.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\bluetooth_emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\bluetooth_emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\browser.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\browser.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\cache_storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\cache_storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\cast.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\cast.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\console.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\console.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\crash_report_context.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\crash_report_context.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\css.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\css.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\debugger.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\debugger.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\device_access.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\device_access.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\device_orientation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\device_orientation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\dom.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\dom.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\dom_debugger.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\dom_debugger.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\dom_snapshot.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\dom_snapshot.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\dom_storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\dom_storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\event_breakpoints.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\event_breakpoints.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\extensions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\extensions.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\fed_cm.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\fed_cm.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\fetch.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\fetch.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\file_system.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\file_system.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\headless_experimental.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\headless_experimental.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\heap_profiler.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\heap_profiler.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\indexed_db.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\indexed_db.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\input_.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\input_.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\inspector.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\inspector.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\io.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\io.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\layer_tree.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\layer_tree.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\log.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\log.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\media.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\media.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\memory.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\memory.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\network.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\network.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\overlay.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\overlay.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\page.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\page.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\performance.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\performance.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\performance_timeline.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\performance_timeline.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\preload.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\preload.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\profiler.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\profiler.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\pwa.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\pwa.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\py.typed',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\py.typed',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\runtime.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\runtime.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\schema.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\schema.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\security.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\security.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\service_worker.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\service_worker.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\smart_card_emulation.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\smart_card_emulation.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\storage.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\storage.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\system_info.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\system_info.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\target.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\target.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\tethering.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\tethering.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\tracing.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\tracing.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\util.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\util.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\web_audio.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\web_audio.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\web_authn.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\web_authn.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\devtools\\v151\\web_mcp.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\devtools\\v151\\web_mcp.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\driver_finder.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\driver_finder.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\fedcm\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\fedcm\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\fedcm\\account.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\fedcm\\account.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\fedcm\\dialog.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\fedcm\\dialog.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\keys.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\keys.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\linux\\selenium-manager',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\linux\\selenium-manager',
+   'DATA'),
+  ('selenium\\webdriver\\common\\log.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\log.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\macos\\selenium-manager',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\macos\\selenium-manager',
+   'DATA'),
+  ('selenium\\webdriver\\common\\mutation-listener.js',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\mutation-listener.js',
+   'DATA'),
+  ('selenium\\webdriver\\common\\options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\options.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\print_page_options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\print_page_options.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\proxy.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\proxy.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\selenium-manager-THIRD-PARTY-NOTICES.txt',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\selenium-manager-THIRD-PARTY-NOTICES.txt',
+   'DATA'),
+  ('selenium\\webdriver\\common\\selenium-manager.cdx.json',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\selenium-manager.cdx.json',
+   'DATA'),
+  ('selenium\\webdriver\\common\\selenium_manager.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\selenium_manager.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\service.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\timeouts.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\timeouts.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\utils.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\utils.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\virtual_authenticator.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\virtual_authenticator.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\common\\window.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\window.py',
+   'DATA'),
+  ('selenium\\webdriver\\edge\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\edge\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\edge\\__init__.pyi',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\edge\\__init__.pyi',
+   'DATA'),
+  ('selenium\\webdriver\\edge\\options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\edge\\options.py',
+   'DATA'),
+  ('selenium\\webdriver\\edge\\remote_connection.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\edge\\remote_connection.py',
+   'DATA'),
+  ('selenium\\webdriver\\edge\\service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\edge\\service.py',
+   'DATA'),
+  ('selenium\\webdriver\\edge\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\edge\\webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\firefox\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\firefox\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\firefox\\__init__.pyi',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\firefox\\__init__.pyi',
+   'DATA'),
+  ('selenium\\webdriver\\firefox\\firefox_profile.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\firefox\\firefox_profile.py',
+   'DATA'),
+  ('selenium\\webdriver\\firefox\\options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\firefox\\options.py',
+   'DATA'),
+  ('selenium\\webdriver\\firefox\\remote_connection.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\firefox\\remote_connection.py',
+   'DATA'),
+  ('selenium\\webdriver\\firefox\\service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\firefox\\service.py',
+   'DATA'),
+  ('selenium\\webdriver\\firefox\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\firefox\\webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\firefox\\webdriver_prefs.json',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\firefox\\webdriver_prefs.json',
+   'DATA'),
+  ('selenium\\webdriver\\ie\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\ie\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\ie\\__init__.pyi',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\ie\\__init__.pyi',
+   'DATA'),
+  ('selenium\\webdriver\\ie\\options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\ie\\options.py',
+   'DATA'),
+  ('selenium\\webdriver\\ie\\service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\ie\\service.py',
+   'DATA'),
+  ('selenium\\webdriver\\ie\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\ie\\webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\bidi_connection.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\bidi_connection.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\client_config.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\client_config.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\command.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\command.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\errorhandler.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\fedcm.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\fedcm.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\file_detector.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\file_detector.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\findElements.js',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\findElements.js',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\getAttribute.js',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\getAttribute.js',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\isDisplayed.js',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\isDisplayed.js',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\locator_converter.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\locator_converter.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\mobile.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\mobile.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\remote_connection.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\script_key.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\script_key.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\server.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\server.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\shadowroot.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\shadowroot.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\switch_to.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\switch_to.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\utils.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\utils.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\webelement.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py',
+   'DATA'),
+  ('selenium\\webdriver\\remote\\websocket_connection.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\websocket_connection.py',
+   'DATA'),
+  ('selenium\\webdriver\\safari\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\safari\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\safari\\__init__.pyi',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\safari\\__init__.pyi',
+   'DATA'),
+  ('selenium\\webdriver\\safari\\options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\safari\\options.py',
+   'DATA'),
+  ('selenium\\webdriver\\safari\\permissions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\safari\\permissions.py',
+   'DATA'),
+  ('selenium\\webdriver\\safari\\remote_connection.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\safari\\remote_connection.py',
+   'DATA'),
+  ('selenium\\webdriver\\safari\\service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\safari\\service.py',
+   'DATA'),
+  ('selenium\\webdriver\\safari\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\safari\\webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\abstract_event_listener.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\abstract_event_listener.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\color.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\color.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\event_firing_webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\event_firing_webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\events.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\events.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\expected_conditions.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\relative_locator.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\relative_locator.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\select.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\select.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\ui.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\ui.py',
+   'DATA'),
+  ('selenium\\webdriver\\support\\wait.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py',
+   'DATA'),
+  ('selenium\\webdriver\\webkitgtk\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\webkitgtk\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\webkitgtk\\__init__.pyi',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\webkitgtk\\__init__.pyi',
+   'DATA'),
+  ('selenium\\webdriver\\webkitgtk\\options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\webkitgtk\\options.py',
+   'DATA'),
+  ('selenium\\webdriver\\webkitgtk\\service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\webkitgtk\\service.py',
+   'DATA'),
+  ('selenium\\webdriver\\webkitgtk\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\webkitgtk\\webdriver.py',
+   'DATA'),
+  ('selenium\\webdriver\\wpewebkit\\__init__.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\wpewebkit\\__init__.py',
+   'DATA'),
+  ('selenium\\webdriver\\wpewebkit\\__init__.pyi',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\wpewebkit\\__init__.pyi',
+   'DATA'),
+  ('selenium\\webdriver\\wpewebkit\\options.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\wpewebkit\\options.py',
+   'DATA'),
+  ('selenium\\webdriver\\wpewebkit\\service.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\wpewebkit\\service.py',
+   'DATA'),
+  ('selenium\\webdriver\\wpewebkit\\webdriver.py',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\selenium\\webdriver\\wpewebkit\\webdriver.py',
+   'DATA'),
+  ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
+   'ipsum.txt',
+   'DATA'),
+  ('certifi\\cacert.pem',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\certifi\\cacert.pem',
+   'DATA'),
+  ('certifi\\py.typed',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\certifi\\py.typed',
+   'DATA'),
+  ('customtkinter\\assets\\themes\\blue.json',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\blue.json',
+   'DATA'),
+  ('customtkinter\\assets\\icons\\CustomTkinter_icon_Windows.ico',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\icons\\CustomTkinter_icon_Windows.ico',
+   'DATA'),
+  ('customtkinter\\assets\\themes\\dark-blue.json',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\dark-blue.json',
+   'DATA'),
+  ('customtkinter\\assets\\fonts\\CustomTkinter_shapes_font.otf',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\fonts\\CustomTkinter_shapes_font.otf',
+   'DATA'),
+  ('customtkinter\\assets\\fonts\\Roboto\\Roboto-Regular.ttf',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\fonts\\Roboto\\Roboto-Regular.ttf',
+   'DATA'),
+  ('customtkinter\\assets\\.DS_Store',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\.DS_Store',
+   'DATA'),
+  ('customtkinter\\assets\\fonts\\Roboto\\Roboto-Medium.ttf',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\fonts\\Roboto\\Roboto-Medium.ttf',
+   'DATA'),
+  ('customtkinter\\assets\\themes\\green.json',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\green.json',
+   'DATA'),
+  ('customtkinter\\assets\\icons\\.DS_Store',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\icons\\.DS_Store',
+   'DATA'),
+  ('customtkinter\\assets\\themes\\gold.json',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\gold.json',
+   'DATA'),
+  ('attrs-26.1.0.dist-info\\WHEEL',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\WHEEL',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\INSTALLER',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\RECORD',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\RECORD',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('attrs-26.1.0.dist-info\\RECORD',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\RECORD',
+   'DATA'),
+  ('attrs-26.1.0.dist-info\\METADATA',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\METADATA',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\top_level.txt',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('attrs-26.1.0.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\licenses\\LICENSE.MIT',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\licenses\\LICENSE.MIT',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\entry_points.txt',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\entry_points.txt',
+   'DATA'),
+  ('attrs-26.1.0.dist-info\\INSTALLER',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\licenses\\LICENSE.APACHE2',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\licenses\\LICENSE.APACHE2',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\WHEEL',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\WHEEL',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\METADATA',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\METADATA',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\build\\gc_toxicidade_bot\\base_library.zip',
+   'DATA')],
+ 'python314.dll',
+ False,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
