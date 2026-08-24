@@ -193,13 +193,13 @@
    'C:\\Users\\Gamers '
    'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\tcl90.dll',
    'BINARY'),
-  ('libtommath.dll',
-   'C:\\Users\\Gamers '
-   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\libtommath.dll',
-   'BINARY'),
   ('tcl9tk90.dll',
    'C:\\Users\\Gamers '
    'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\tcl9tk90.dll',
+   'BINARY'),
+  ('libtommath.dll',
+   'C:\\Users\\Gamers '
+   'Club\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs\\libtommath.dll',
    'BINARY'),
   ('zlib1.dll',
    'C:\\Users\\Gamers '
@@ -1542,101 +1542,101 @@
    'C:\\Users\\Gamers '
    'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\certifi\\py.typed',
    'DATA'),
-  ('customtkinter\\assets\\themes\\blue.json',
+  ('customtkinter\\assets\\themes\\green.json',
    'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\blue.json',
-   'DATA'),
-  ('customtkinter\\assets\\icons\\CustomTkinter_icon_Windows.ico',
-   'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\icons\\CustomTkinter_icon_Windows.ico',
-   'DATA'),
-  ('customtkinter\\assets\\themes\\dark-blue.json',
-   'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\dark-blue.json',
-   'DATA'),
-  ('customtkinter\\assets\\fonts\\CustomTkinter_shapes_font.otf',
-   'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\fonts\\CustomTkinter_shapes_font.otf',
-   'DATA'),
-  ('customtkinter\\assets\\fonts\\Roboto\\Roboto-Regular.ttf',
-   'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\fonts\\Roboto\\Roboto-Regular.ttf',
-   'DATA'),
-  ('customtkinter\\assets\\.DS_Store',
-   'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\.DS_Store',
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\green.json',
    'DATA'),
   ('customtkinter\\assets\\fonts\\Roboto\\Roboto-Medium.ttf',
    'C:\\Users\\Gamers '
    'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\fonts\\Roboto\\Roboto-Medium.ttf',
    'DATA'),
-  ('customtkinter\\assets\\themes\\green.json',
+  ('customtkinter\\assets\\.DS_Store',
    'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\green.json',
-   'DATA'),
-  ('customtkinter\\assets\\icons\\.DS_Store',
-   'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\icons\\.DS_Store',
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\.DS_Store',
    'DATA'),
   ('customtkinter\\assets\\themes\\gold.json',
    'C:\\Users\\Gamers '
    'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\gold.json',
    'DATA'),
-  ('attrs-26.1.0.dist-info\\WHEEL',
+  ('customtkinter\\assets\\themes\\blue.json',
    'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\WHEEL',
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\blue.json',
    'DATA'),
-  ('trio-0.34.0.dist-info\\INSTALLER',
+  ('customtkinter\\assets\\fonts\\Roboto\\Roboto-Regular.ttf',
    'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\INSTALLER',
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\fonts\\Roboto\\Roboto-Regular.ttf',
+   'DATA'),
+  ('customtkinter\\assets\\icons\\CustomTkinter_icon_Windows.ico',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\icons\\CustomTkinter_icon_Windows.ico',
+   'DATA'),
+  ('customtkinter\\assets\\icons\\.DS_Store',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\icons\\.DS_Store',
+   'DATA'),
+  ('customtkinter\\assets\\fonts\\CustomTkinter_shapes_font.otf',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\fonts\\CustomTkinter_shapes_font.otf',
+   'DATA'),
+  ('customtkinter\\assets\\themes\\dark-blue.json',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\customtkinter\\assets\\themes\\dark-blue.json',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\METADATA',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\METADATA',
    'DATA'),
   ('trio-0.34.0.dist-info\\RECORD',
    'C:\\Users\\Gamers '
    'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\RECORD',
    'DATA'),
-  ('trio-0.34.0.dist-info\\licenses\\LICENSE',
+  ('trio-0.34.0.dist-info\\licenses\\LICENSE.APACHE2',
    'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\licenses\\LICENSE',
-   'DATA'),
-  ('attrs-26.1.0.dist-info\\RECORD',
-   'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\RECORD',
-   'DATA'),
-  ('attrs-26.1.0.dist-info\\METADATA',
-   'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\METADATA',
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\licenses\\LICENSE.APACHE2',
    'DATA'),
   ('trio-0.34.0.dist-info\\top_level.txt',
    'C:\\Users\\Gamers '
    'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\top_level.txt',
    'DATA'),
-  ('attrs-26.1.0.dist-info\\licenses\\LICENSE',
+  ('attrs-26.1.0.dist-info\\WHEEL',
    'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\licenses\\LICENSE',
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\WHEEL',
    'DATA'),
   ('trio-0.34.0.dist-info\\licenses\\LICENSE.MIT',
    'C:\\Users\\Gamers '
    'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\licenses\\LICENSE.MIT',
    'DATA'),
-  ('trio-0.34.0.dist-info\\entry_points.txt',
+  ('attrs-26.1.0.dist-info\\RECORD',
    'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\entry_points.txt',
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\RECORD',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('attrs-26.1.0.dist-info\\METADATA',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\METADATA',
+   'DATA'),
+  ('trio-0.34.0.dist-info\\INSTALLER',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('attrs-26.1.0.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\Gamers '
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\licenses\\LICENSE',
    'DATA'),
   ('attrs-26.1.0.dist-info\\INSTALLER',
    'C:\\Users\\Gamers '
    'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info\\INSTALLER',
    'DATA'),
-  ('trio-0.34.0.dist-info\\licenses\\LICENSE.APACHE2',
-   'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\licenses\\LICENSE.APACHE2',
-   'DATA'),
   ('trio-0.34.0.dist-info\\WHEEL',
    'C:\\Users\\Gamers '
    'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\WHEEL',
    'DATA'),
-  ('trio-0.34.0.dist-info\\METADATA',
+  ('trio-0.34.0.dist-info\\entry_points.txt',
    'C:\\Users\\Gamers '
-   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\METADATA',
+   'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\trio-0.34.0.dist-info\\entry_points.txt',
    'DATA'),
   ('base_library.zip',
    'C:\\Users\\Gamers '
@@ -1645,7 +1645,7 @@
  [],
  False,
  False,
- 1787579732,
+ 1787594540,
  [('runw.exe',
    'C:\\Users\\Gamers '
    'Club\\Desktop\\gc_toxicidade_bot\\venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',

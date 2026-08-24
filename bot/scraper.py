@@ -9,6 +9,9 @@ HTML real). Os seletores abaixo usam texto visível (ex: "Provas",
 mudanças de layout - mas é bem possível que, na primeira execução real,
 algum seletor precise de ajuste fino.
 """
+"""
+Navega pela listagem de "Reports Pendentes" e pela tela de um report individual.
+"""
 import re
 import time
 from datetime import datetime
@@ -28,7 +31,6 @@ def ir_para_pendentes(driver, config, timeout=30):
 
 
 def esta_logado(driver, config, timeout=6):
-    """Verifica rapidamente se a tela de pendentes carregou sem pedir login."""
     driver.get(config["url_pendentes"])
     try:
         WebDriverWait(driver, timeout).until(
@@ -46,7 +48,6 @@ def _texto_header(cell):
 
 
 def _obter_linhas_dados(tabela):
-    """Pega as linhas de dado da tabela evitando o cabeçalho."""
     linhas = tabela.find_elements(By.XPATH, ".//tbody//tr")
     if linhas:
         return linhas
@@ -55,7 +56,6 @@ def _obter_linhas_dados(tabela):
 
 
 def _esperar_linhas_carregarem(driver, timeout=15):
-    """Espera pelo menos 1 linha de dado aparecer na tabela para iniciar a leitura."""
     try:
         WebDriverWait(driver, timeout).until(
             lambda d: any(
@@ -68,8 +68,8 @@ def _esperar_linhas_carregarem(driver, timeout=15):
 
 def listar_reports_do_dia(driver, data_str, max_scrolls=150):
     """
-    Usa Scroll Infinito para carregar os reports. Para automaticamente assim 
-    que passar do bloco de datas alvo, otimizando o tempo.
+    Usa Scroll Infinito para carregar os reports. Lê a página inteira ou até 
+    acabar o bloco da data procurada.
     """
     encontrados_ordem = []
     encontrados_set = set()
@@ -82,11 +82,6 @@ def listar_reports_do_dia(driver, data_str, max_scrolls=150):
         "paginas_percorridas": 1
     }
 
-    try:
-        data_alvo = datetime.strptime(data_str, "%d/%m/%Y")
-    except ValueError:
-        data_alvo = None
-
     _esperar_linhas_carregarem(driver, timeout=15)
 
     tabelas = driver.find_elements(By.XPATH, "//table")
@@ -95,7 +90,6 @@ def listar_reports_do_dia(driver, data_str, max_scrolls=150):
 
     diagnostico["tabelas_na_pagina"] = len(tabelas)
 
-    # Escolhe a tabela com mais linhas (tabela principal)
     tabela = max(tabelas, key=lambda t: len(_obter_linhas_dados(t)))
     headers = tabela.find_elements(By.XPATH, ".//thead//th")
     if not headers:
@@ -119,7 +113,6 @@ def listar_reports_do_dia(driver, data_str, max_scrolls=150):
     terminou_bloco = False
 
     for scroll in range(max_scrolls):
-        # 1. Re-buscar tabela para evitar erro de elementos obsoletos (Stale Element)
         tabelas = driver.find_elements(By.XPATH, "//table")
         tabela = max(tabelas, key=lambda t: len(_obter_linhas_dados(t)))
         linhas = _obter_linhas_dados(tabela)
@@ -127,7 +120,6 @@ def listar_reports_do_dia(driver, data_str, max_scrolls=150):
         if scroll == 0:
             diagnostico["linhas_na_tabela_escolhida"] = len(linhas)
 
-        # 2. Verifica se a tabela parou de crescer (fim da página real)
         if len(linhas) == linhas_processadas:
             tentativas_sem_novas_linhas += 1
             if tentativas_sem_novas_linhas >= 3:
@@ -135,7 +127,6 @@ def listar_reports_do_dia(driver, data_str, max_scrolls=150):
         else:
             tentativas_sem_novas_linhas = 0
 
-        # 3. Processa apenas as linhas NOVAS carregadas
         for i in range(linhas_processadas, len(linhas)):
             try:
                 celulas = linhas[i].find_elements(By.XPATH, "./td")
@@ -148,7 +139,7 @@ def listar_reports_do_dia(driver, data_str, max_scrolls=150):
                 if scroll == 0 and len(diagnostico["amostra_datas"]) < 5:
                     diagnostico["amostra_datas"].append(texto_criado)
 
-                # Lógica de agrupamento de data
+                # --- CORREÇÃO: LÓGICA DE AGRUPAMENTO BLINDADA ---
                 if data_da_linha_str == data_str:
                     viu_data_alvo = True
                     numero = celulas[idx_numero].text.strip()
@@ -156,35 +147,24 @@ def listar_reports_do_dia(driver, data_str, max_scrolls=150):
                         encontrados_set.add(numero)
                         encontrados_ordem.append(numero)
                 elif viu_data_alvo:
-                    # Estávamos lendo a data certa, e de repente a data mudou.
-                    # Isso significa que todos os reports desse dia já foram lidos!
+                    # Se ele estava lendo a data certa e ela de repente mudou,
+                    # significa que o bloco de reports daquele dia acabou.
                     terminou_bloco = True
                     break
-                else:
-                    # Se as datas são mais antigas que a alvo e nem achamos ela, para também.
-                    if data_alvo:
-                        try:
-                            data_linha = datetime.strptime(data_da_linha_str, "%d/%m/%Y")
-                            if data_linha < data_alvo:
-                                terminou_bloco = True
-                                break
-                        except ValueError:
-                            pass
 
             except Exception:
-                continue # Ignora pequenas falhas de leitura na célula e continua
+                continue
 
         linhas_processadas = len(linhas)
         diagnostico["scrolls_realizados"] = scroll + 1
-        diagnostico["paginas_percorridas"] = scroll + 1  # Mantido pro log do app.py não quebrar
+        diagnostico["paginas_percorridas"] = scroll + 1 
 
         if terminou_bloco:
             break
 
-        # 4. Executa o Scroll
         try:
             driver.execute_script("arguments[0].scrollIntoView(true);", linhas[-1])
-            time.sleep(1.5) # Aguarda 1.5s para o site carregar novas linhas
+            time.sleep(1.5)
         except Exception:
             time.sleep(1)
 
@@ -192,7 +172,6 @@ def listar_reports_do_dia(driver, data_str, max_scrolls=150):
 
 
 def abrir_report_por_id(driver, config, numero, timeout=30):
-    """Navega DIRETO para a tela do report pela URL."""
     url = config["url_analisar_template"].format(id=numero)
     driver.get(url)
     WebDriverWait(driver, timeout).until(
@@ -230,7 +209,6 @@ def _ler_texto_estavel(elemento, tentativas=8, intervalo=0.3):
 
 
 def ler_report_atual(driver, report_id=None):
-    """Lê os dados relevantes da tela do report atual."""
     if report_id is None:
         titulo = driver.find_element(By.XPATH, "//*[contains(text(),'ANALISANDO REPORT ID')]").text
         m = re.search(r"(\d+)", titulo)

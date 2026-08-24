@@ -1,9 +1,6 @@
 """
-GC - Bot de Triagem de Toxicidade
+GC - ToxiCleaner (Bot de Triagem de Toxicidade)
 Painel gráfico moderno (CustomTkinter) para configurar e rodar o bot.
-
-Rodando como .py:  python app.py
-Rodando empacotado: dá dois cliques no .exe gerado pelo build.bat
 """
 import os
 import sys
@@ -33,10 +30,8 @@ def carregar_config():
 # --- WORKER DO BOT (LÓGICA) ---
 
 class BotWorker(threading.Thread):
-    """Roda toda a automação numa thread separada, para o painel não travar."""
-
     def __init__(self, config, staff_nome, staff_inicial, data_str, navegador,
-                 modo_automatico, quantidade_maxima, fila_eventos):
+                 modo_automatico, quantidade_maxima, fila_eventos, lista_ids_forcados=None, motivo_massa="Inválido"):
         super().__init__(daemon=True)
         self.config = config
         self.staff_nome = staff_nome
@@ -46,6 +41,8 @@ class BotWorker(threading.Thread):
         self.modo_automatico = modo_automatico
         self.quantidade_maxima = quantidade_maxima
         self.fila = fila_eventos
+        self.lista_ids_forcados = lista_ids_forcados
+        self.motivo_massa = motivo_massa
         self._parar = threading.Event()
 
     def parar(self):
@@ -83,31 +80,31 @@ class BotWorker(threading.Thread):
                     self.fila.put(("fim", 0))
                     return
 
-            self.log("Indo para a lista de reports pendentes...")
-            scraper.ir_para_pendentes(driver, self.config)
+            # --- LÓGICA DE INVALÍDAÇÃO EM MASSA ---
+            if self.lista_ids_forcados:
+                self.log(f"Modo Invalidação em Massa ativado: {len(self.lista_ids_forcados)} reports fornecidos.")
+                reports = self.lista_ids_forcados
+            # --- LÓGICA PADRÃO DE TRIAGEM ---
+            else:
+                self.log("Indo para a lista de reports pendentes...")
+                scraper.ir_para_pendentes(driver, self.config)
 
-            self.log(f"Procurando reports do dia {self.data_str}...")
-            reports, diagnostico = scraper.listar_reports_do_dia(driver, self.data_str)
+                self.log(f"Procurando reports do dia {self.data_str}...")
+                reports, diagnostico = scraper.listar_reports_do_dia(driver, self.data_str)
 
-            if not reports:
-                self.log(f"⚠ Nenhum report encontrado para a data {self.data_str}. Confira se a data está correta ou se já foi tudo limpo.")
-                self.fila.put(("fim", 0))
-                return
+                if not reports:
+                    self.log(f"⚠ Nenhum report encontrado para a data {self.data_str}. Confira se a data está correta ou se já foi tudo limpo.")
+                    self.fila.put(("fim", 0))
+                    return
 
-            self.log(f"Encontrados {len(reports)} report(s) no dia {self.data_str}.")
-            
-            if diagnostico["paginas_percorridas"] == 1 and not diagnostico["paginacao_encontrada"] \
-                    and len(reports) > 0 and len(reports) % 10 == 0:
-                self.log(f"⚠ Achei um número redondo de reports ({len(reports)}) e NÃO encontrei nenhum controle de 'próxima página' - é bem provável que exista mais gente pendente.")
+                self.log(f"Encontrados {len(reports)} report(s) no dia {self.data_str}.")
+                
+                if self.quantidade_maxima:
+                    if len(reports) > self.quantidade_maxima:
+                        self.log(f"🔒 Limitando a {self.quantidade_maxima} report(s), como configurado (teste seguro) - existem {len(reports)} no total desse dia.")
+                    reports = reports[: self.quantidade_maxima]
 
-            if self.quantidade_maxima:
-                if len(reports) > self.quantidade_maxima:
-                    self.log(f"🔒 Limitando a {self.quantidade_maxima} report(s), como configurado (teste seguro) - existem {len(reports)} no total desse dia.")
-                reports = reports[: self.quantidade_maxima]
-
-            # Avisa a interface quantos reports vão ser processados de fato
             self.fila.put(("total_encontrado", len(reports)))
-
             total_processados = 0
 
             for numero in reports:
@@ -119,26 +116,38 @@ class BotWorker(threading.Thread):
 
                 try:
                     scraper.abrir_report_por_id(driver, self.config, numero)
-                    dados = scraper.ler_report_atual(driver, report_id=numero)
+                    
+                    if self.lista_ids_forcados:
+                        # Se for em massa, nem perdemos tempo lendo provas
+                        dados = {"texto_provas": f"Invalidação forçada - Motivo: {self.motivo_massa}"}
+                        resultado = {"status": "invalido", "motivo": f"Invalidação em massa"}
+                    else:
+                        dados = scraper.ler_report_atual(driver, report_id=numero)
+                        resultado = evidence.classificar_provas(
+                            dados["texto_provas"],
+                            self.config["whitelist_dominios"],
+                            self.config["blacklist_padroes"],
+                        )
                 except Exception as e:
                     self.log(f"❌ Erro ao abrir/ler report #{numero}: {e}")
-                    scraper.ir_para_pendentes(driver, self.config)
+                    if not self.lista_ids_forcados:
+                        scraper.ir_para_pendentes(driver, self.config)
                     continue
 
-                resultado = evidence.classificar_provas(
-                    dados["texto_provas"],
-                    self.config["whitelist_dominios"],
-                    self.config["blacklist_padroes"],
-                )
+                texto_provas_bruto = dados.get('texto_provas', "Nenhuma prova informada")
+                if not self.lista_ids_forcados:
+                    self.log(f"🔎 Provas (bruto): {texto_provas_bruto!r}")
 
-                self.log(f"🔎 Provas (bruto): {dados['texto_provas']!r}")
-
-                # Aplica as ações e envia o resultado para o painel lateral de resumo
                 if resultado["status"] == "invalido":
                     self.log(f"Report #{numero}: SEM PROVA VÁLIDA -> vou marcar como Inválido.")
                     try:
+                        # Adapta a inicial se for massa com motivo específico
+                        inicial_usada = self.staff_inicial
+                        if self.lista_ids_forcados and self.motivo_massa != "Inválido (Padrão)":
+                            inicial_usada = f"{self.staff_inicial} - {self.motivo_massa}"
+
                         estado = actions.marcar_como_invalido(
-                            driver, self.config, self.staff_inicial, self.modo_automatico,
+                            driver, self.config, inicial_usada, self.modo_automatico,
                             callback_aguardar_manual=lambda rid=numero: self.pedir_ok_manual(rid),
                         )
                         self.log(f"Report #{numero}: {estado}")
@@ -147,22 +156,22 @@ class BotWorker(threading.Thread):
                     except Exception as e:
                         self.log(f"❌ Erro ao aplicar ações no report #{numero}: {e}")
                     
-                    self.fila.put(("resultado", numero, "inválido ❌"))
+                    self.fila.put(("resultado", numero, "inválido ❌", texto_provas_bruto))
 
                 elif resultado["status"] == "valido":
                     self.log(f"Report #{numero}: possui link de prova reconhecido -> PULANDO (revisão humana).")
                     storage.registrar(self.config, numero, self.data_str, self.staff_nome, "revisao_manual_valido", resultado["motivo"], resultado.get("links", []))
-                    
-                    self.fila.put(("resultado", numero, "válido ✅"))
+                    self.fila.put(("resultado", numero, "válido ✅", texto_provas_bruto))
 
-                else:  # ambiguo
+                else:
                     self.log(f"Report #{numero}: link não reconhecido -> PULANDO (revisão manual).")
                     storage.registrar(self.config, numero, self.data_str, self.staff_nome, "revisao_manual_ambiguo", resultado["motivo"], resultado.get("links", []))
-                    
-                    self.fila.put(("resultado", numero, "revisão manual ⚠️"))
+                    self.fila.put(("resultado", numero, "revisão manual ⚠️", texto_provas_bruto))
 
                 self.fila.put(("contador", total_processados))
-                scraper.ir_para_pendentes(driver, self.config)
+                
+                if not self.lista_ids_forcados:
+                    scraper.ir_para_pendentes(driver, self.config)
 
             self.log(f"✅ Finalizado. Total processado nesta execução: {total_processados}")
             self.fila.put(("fim", total_processados))
@@ -187,8 +196,8 @@ ctk.set_default_color_theme("blue")
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("GC - Bot de Triagem de Toxicidade")
-        self.geometry("1100x680")
+        self.title("GC - ToxiCleaner (Bot de Triagem de Toxicidade)")
+        self.geometry("1150x700")
         self.config_data = carregar_config()
         self.fila = queue.Queue()
         self.worker = None
@@ -201,53 +210,90 @@ class App(ctk.CTk):
         self.after(150, self._poll_fila)
 
     def _montar_ui(self):
-        frm = ctk.CTkFrame(self)
-        frm.pack(fill="x", padx=15, pady=15)
-        frm.columnconfigure(1, weight=1)
+        # 1. CABEÇALHO MODERNO
+        header_frame = ctk.CTkFrame(self, fg_color="transparent")
+        header_frame.pack(fill="x", padx=15, pady=(15, 5))
+        
+        lbl_titulo = ctk.CTkLabel(header_frame, text="ToxiCleaner Dashboard", font=ctk.CTkFont(size=24, weight="bold"))
+        lbl_titulo.pack(side="left")
 
-        ctk.CTkLabel(frm, text="Nome de quem está usando o bot:").grid(row=0, column=0, sticky="w", padx=10, pady=5)
+        # Botão na direita superior!
+        self.btn_massa = ctk.CTkButton(header_frame, text="💣 Invalidação em Massa", command=self._abrir_painel_massa, fg_color="#ff9800", hover_color="#f57c00", font=ctk.CTkFont(weight="bold"))
+        self.btn_massa.pack(side="right")
+
+        # 2. ÁREA DE CONFIGURAÇÕES (Duas Colunas)
+        settings_frame = ctk.CTkFrame(self)
+        settings_frame.pack(fill="x", padx=15, pady=10)
+        settings_frame.columnconfigure(0, weight=1)
+        settings_frame.columnconfigure(1, weight=1)
+
+        # Coluna Esquerda: Identificação
+        frm_esq = ctk.CTkFrame(settings_frame, fg_color="transparent")
+        frm_esq.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
+        
+        ctk.CTkLabel(frm_esq, text="👤 Identificação do Staff", font=ctk.CTkFont(size=14, weight="bold")).pack(anchor="w", pady=(0, 10))
+        
+        row1 = ctk.CTkFrame(frm_esq, fg_color="transparent")
+        row1.pack(fill="x", pady=2)
+        ctk.CTkLabel(row1, text="Nome:").pack(side="left")
         self.var_nome = ctk.StringVar()
-        ctk.CTkEntry(frm, textvariable=self.var_nome, width=250).grid(row=0, column=1, sticky="w", padx=10, pady=5)
+        ctk.CTkEntry(row1, textvariable=self.var_nome, width=200).pack(side="right")
 
-        ctk.CTkLabel(frm, text="Inicial (usada no comentário 'Bot - X'):").grid(row=1, column=0, sticky="w", padx=10, pady=5)
+        row2 = ctk.CTkFrame(frm_esq, fg_color="transparent")
+        row2.pack(fill="x", pady=2)
+        ctk.CTkLabel(row2, text="Inicial:").pack(side="left")
         self.var_inicial = ctk.StringVar()
-        ctk.CTkEntry(frm, textvariable=self.var_inicial, width=80).grid(row=1, column=1, sticky="w", padx=10, pady=5)
+        ctk.CTkEntry(row2, textvariable=self.var_inicial, width=200).pack(side="right")
 
-        ctk.CTkLabel(frm, text="Data para limpar (dd/mm/aaaa):").grid(row=2, column=0, sticky="w", padx=10, pady=5)
+        row3 = ctk.CTkFrame(frm_esq, fg_color="transparent")
+        row3.pack(fill="x", pady=2)
+        ctk.CTkLabel(row3, text="Data a limpar:").pack(side="left")
         self.var_data = ctk.StringVar(value=datetime.now().strftime("%d/%m/%Y"))
-        ctk.CTkEntry(frm, textvariable=self.var_data, width=120).grid(row=2, column=1, sticky="w", padx=10, pady=5)
+        ctk.CTkEntry(row3, textvariable=self.var_data, width=200).pack(side="right")
 
-        ctk.CTkLabel(frm, text="Navegador:").grid(row=3, column=0, sticky="w", padx=10, pady=5)
+        # Coluna Direita: Configurações do Bot
+        frm_dir = ctk.CTkFrame(settings_frame, fg_color="transparent")
+        frm_dir.grid(row=0, column=1, sticky="nsew", padx=10, pady=10)
+
+        ctk.CTkLabel(frm_dir, text="⚙️ Configurações do Bot", font=ctk.CTkFont(size=14, weight="bold")).pack(anchor="w", pady=(0, 10))
+
+        row4 = ctk.CTkFrame(frm_dir, fg_color="transparent")
+        row4.pack(fill="x", pady=2)
+        ctk.CTkLabel(row4, text="Navegador:").pack(side="left")
         self.var_navegador = ctk.StringVar(value="edge")
-        ctk.CTkComboBox(frm, variable=self.var_navegador, values=["edge", "chrome", "firefox"], state="readonly", width=120).grid(row=3, column=1, sticky="w", padx=10, pady=5)
+        ctk.CTkComboBox(row4, variable=self.var_navegador, values=["edge", "chrome", "firefox"], state="readonly", width=200).pack(side="right")
 
-        ctk.CTkLabel(frm, text="Modo:").grid(row=4, column=0, sticky="w", padx=10, pady=5)
+        row5 = ctk.CTkFrame(frm_dir, fg_color="transparent")
+        row5.pack(fill="x", pady=2)
+        ctk.CTkLabel(row5, text="Modo:").pack(side="left")
         self.var_modo = ctk.StringVar(value="teste")
-        ctk.CTkComboBox(frm, variable=self.var_modo, values=["teste (clico eu mesmo em Notificar)", "automatico (clica sozinho)"], state="readonly", width=300).grid(row=4, column=1, sticky="w", padx=10, pady=5)
+        ctk.CTkComboBox(row5, variable=self.var_modo, values=["teste (clico em Notificar)", "automatico (clica sozinho)"], state="readonly", width=200).pack(side="right")
 
-        ctk.CTkLabel(frm, text="Quantidade a processar (vazio = todos):").grid(row=5, column=0, sticky="w", padx=10, pady=5)
+        row6 = ctk.CTkFrame(frm_dir, fg_color="transparent")
+        row6.pack(fill="x", pady=2)
+        ctk.CTkLabel(row6, text="Qtde (vazio=todos):").pack(side="left")
         self.var_quantidade = ctk.StringVar(value="")
-        ctk.CTkEntry(frm, textvariable=self.var_quantidade, width=80).grid(row=5, column=1, sticky="w", padx=10, pady=5)
+        ctk.CTkEntry(row6, textvariable=self.var_quantidade, width=200).pack(side="right")
 
+        # 3. BOTÕES DE AÇÃO PRINCIPAIS
         btn_frame = ctk.CTkFrame(self, fg_color="transparent")
         btn_frame.pack(fill="x", padx=15, pady=0)
-        self.btn_iniciar = ctk.CTkButton(btn_frame, text="▶ Iniciar", command=self._iniciar, fg_color="#28a745", hover_color="#218838")
+        self.btn_iniciar = ctk.CTkButton(btn_frame, text="▶ Iniciar Triagem", command=self._iniciar, fg_color="#28a745", hover_color="#218838", font=ctk.CTkFont(weight="bold"))
         self.btn_iniciar.pack(side="left", padx=(0, 10))
-        self.btn_parar = ctk.CTkButton(btn_frame, text="■ Parar", command=self._parar, state="disabled", fg_color="#dc3545", hover_color="#c82333")
+        
+        self.btn_parar = ctk.CTkButton(btn_frame, text="■ Parar", command=self._parar, state="disabled", fg_color="#dc3545", hover_color="#c82333", font=ctk.CTkFont(weight="bold"))
         self.btn_parar.pack(side="left")
 
         self.lbl_contador = ctk.CTkLabel(self, text="Reports processados nesta sessão: 0", font=ctk.CTkFont(weight="bold"))
-        self.lbl_contador.pack(anchor="w", padx=15, pady=10)
+        self.lbl_contador.pack(anchor="w", padx=15, pady=(15,5))
 
-        # --- ÁREA DIVIDIDA ---
+        # 4. ÁREA DE LOGS E RESUMO
         bottom_frame = ctk.CTkFrame(self, fg_color="transparent")
         bottom_frame.pack(fill="both", expand=True, padx=15, pady=(0, 15))
-        
         bottom_frame.columnconfigure(0, weight=6)
         bottom_frame.columnconfigure(1, weight=4)
         bottom_frame.rowconfigure(0, weight=1)
 
-        # 1. Log (Esquerda)
         self.txt_log = ctk.CTkTextbox(bottom_frame, state="disabled", wrap="word", font=ctk.CTkFont(family="Consolas", size=12))
         self.txt_log.grid(row=0, column=0, sticky="nsew", padx=(0, 10))
         
@@ -257,7 +303,6 @@ class App(ctk.CTk):
         self.txt_log.tag_config("destaque", foreground="#8be9fd")
         self.txt_log.tag_config("normal", foreground="#cccccc")
 
-        # 2. Resumo e Botão Copiar (Direita)
         resumo_frame = ctk.CTkFrame(bottom_frame, fg_color="transparent")
         resumo_frame.grid(row=0, column=1, sticky="nsew")
         resumo_frame.rowconfigure(0, weight=1)
@@ -266,8 +311,80 @@ class App(ctk.CTk):
         self.txt_resumo = ctk.CTkTextbox(resumo_frame, state="disabled", wrap="word", font=ctk.CTkFont(family="Consolas", size=13))
         self.txt_resumo.grid(row=0, column=0, sticky="nsew", pady=(0, 10))
 
-        self.btn_copiar = ctk.CTkButton(resumo_frame, text="📋 Copiar Resumo", command=self._copiar_resumo, fg_color="#0078D7", hover_color="#005A9E")
+        self.btn_copiar = ctk.CTkButton(resumo_frame, text="📋 Copiar Resumo", command=self._copiar_resumo, fg_color="#0078D7", hover_color="#005A9E", font=ctk.CTkFont(weight="bold"))
         self.btn_copiar.grid(row=1, column=0, sticky="ew")
+
+    # --- PAINEL DE INVALÍDAÇÃO EM MASSA ATUALIZADO ---
+    def _abrir_painel_massa(self):
+        nome = self.var_nome.get().strip()
+        inicial = self.var_inicial.get().strip()
+        
+        if not nome or not inicial:
+            messagebox.showwarning("Falta informação", "Preencha o seu nome e inicial no painel principal primeiro para usar essa função.")
+            return
+
+        win = ctk.CTkToplevel(self)
+        win.title("Invalidação em Massa")
+        win.geometry("450x550")
+        win.attributes("-topmost", True)
+        
+        ctk.CTkLabel(win, text="Cole os IDs dos reports (um por linha):", font=ctk.CTkFont(weight="bold")).pack(pady=(15, 5))
+        
+        txt_ids = ctk.CTkTextbox(win, width=350, height=250)
+        txt_ids.pack(pady=5)
+        
+        # --- NOVO: Motivo da Invalidação ---
+        ctk.CTkLabel(win, text="Motivo da Invalidação:", font=ctk.CTkFont(weight="bold")).pack(pady=(15, 2))
+        var_motivo = ctk.StringVar(value="Inválido (Padrão)")
+        cb_motivo = ctk.CTkComboBox(win, variable=var_motivo, values=["Inválido (Padrão)", "Duplicado", "Sem Provas"], state="readonly", width=350)
+        cb_motivo.pack(pady=5)
+
+        def _confirmar():
+            texto = txt_ids.get("1.0", "end").strip()
+            if not texto:
+                return
+                
+            ids_brutos = texto.split('\n')
+            ids_limpos = [i.strip() for i in ids_brutos if i.strip().isdigit()]
+            
+            if not ids_limpos:
+                messagebox.showwarning("Aviso", "Nenhum ID numérico válido foi encontrado no texto.")
+                return
+            
+            motivo_escolhido = var_motivo.get()
+            
+            # --- NOVO: Confirmação só aparece depois de checar os dados ---
+            resposta = messagebox.askyesno("Confirmação", "Tem certeza que deseja invalidar todos esses reports pae?")
+            
+            if resposta:
+                win.destroy()
+                self._iniciar_massa(ids_limpos, motivo_escolhido)
+            else:
+                win.destroy()
+
+        btn_confirmar = ctk.CTkButton(win, text="Invalidar Todos", fg_color="#dc3545", hover_color="#c82333", font=ctk.CTkFont(weight="bold"), command=_confirmar)
+        btn_confirmar.pack(pady=20)
+
+    def _iniciar_massa(self, lista_ids, motivo):
+        nome = self.var_nome.get().strip()
+        inicial = self.var_inicial.get().strip()
+        navegador = self.var_navegador.get()
+        data_str = self.var_data.get().strip()
+
+        self.btn_iniciar.configure(state="disabled")
+        self.btn_massa.configure(state="disabled")
+        self.btn_parar.configure(state="normal")
+        
+        self.resultados_reports = []
+        self.total_encontrados = len(lista_ids)
+        self.hora_inicio = datetime.now().strftime("%H:%M")
+        self._atualizar_resumo()
+
+        self._log(f"=== Iniciando INVALÍDAÇÃO EM MASSA: staff={nome} ({inicial}) | motivo={motivo} ===")
+        self._log(f"📋 IDs carregados: {', '.join(lista_ids)}")
+
+        self.worker = BotWorker(self.config_data, nome, inicial, data_str, navegador, True, None, self.fila, lista_ids_forcados=lista_ids, motivo_massa=motivo)
+        self.worker.start()
 
     def _log(self, msg):
         self.txt_log.configure(state="normal")
@@ -297,11 +414,11 @@ class App(ctk.CTk):
         invalidos = sum(1 for r in self.resultados_reports if "inválido ❌" in r[1])
         
         texto = f"Staff: {nome} - {inicial}      data: {data_str} - {self.hora_inicio}\n\n"
-        texto += f"reports: ✅ {self.total_encontrados} reports, ❌ {validos} válidos e {invalidos} inválidos\n\n"
-        texto += "reports:\n"
+        texto += f"Reports: ⚠️ {self.total_encontrados} reports, ✅ {validos} válidos e ❌ {invalidos} inválidos\n\n"
+        texto += "Reports:\n"
 
-        for r_id, status in self.resultados_reports:
-            texto += f"{r_id} - {status}\n\n"
+        for r_id, status, provas in self.resultados_reports:
+            texto += f"° {r_id} - {status}\nProvas: {provas}\n\n"
 
         self.txt_resumo.configure(state="normal")
         self.txt_resumo.delete("1.0", "end")
@@ -363,6 +480,7 @@ class App(ctk.CTk):
             quantidade_maxima = int(quantidade_texto)
 
         self.btn_iniciar.configure(state="disabled")
+        self.btn_massa.configure(state="disabled")
         self.btn_parar.configure(state="normal")
         
         self.resultados_reports = []
@@ -394,7 +512,7 @@ class App(ctk.CTk):
                     self.total_encontrados = evento[1]
                     self._atualizar_resumo()
                 elif tipo == "resultado":
-                    self.resultados_reports.append((evento[1], evento[2]))
+                    self.resultados_reports.append((evento[1], evento[2], evento[3]))
                     self._atualizar_resumo()
                 elif tipo == "pedir_login":
                     _, ev, resposta = evento
@@ -408,6 +526,7 @@ class App(ctk.CTk):
                     self._log(f"--- Sessão encerrada. Total processado: {evento[1]} ---")
                     self._salvar_resumo_txt()
                     self.btn_iniciar.configure(state="normal")
+                    self.btn_massa.configure(state="normal")
                     self.btn_parar.configure(state="disabled")
         except queue.Empty:
             pass
