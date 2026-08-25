@@ -1,4 +1,11 @@
 {
   "versao": "1.0",
-  "url_exe": "https://github.com/celsowilliam/Toxi-Cleaner/releases/download/v1.1/gc_toxicidade_bot.exe"
+  "url_exe": "https://github.com/celsowilliam/Toxi-Cleaner/releases/download/v1.1/gc_toxicidade_bot.exe",
+  "novidades": [
+    "✨ Histórico Global em Nuvem (Firebase) em tempo real",
+    "🎨 Cards de visualização expandidos (sem scroll interno)",
+    "👁️ Novo botão para Ocultar/Mostrar o Terminal e centralizar os cards",
+    "👻 Lógica inteligente para o Modo Fantasma no modo Teste",
+    "⚡ Sistema de auto-atualização em 1 clique"
+  ]
 }
