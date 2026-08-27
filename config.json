@@ -5,6 +5,7 @@
   "_comentario_whitelist": "Domínios/trechos de URL que, se aparecerem em 'Provas', contam como prova real (video/print/audio). O bot NUNCA marca como invalido se achar um desses - ele pula e deixa para revisão manual, pois julgar o conteúdo é humano.",
   "whitelist_dominios": [
     "youtube.com",
+    "youtube.com",
     "youtu.be",
     "streamable.com",
     "imgur.com",
@@ -21,7 +22,12 @@
     "dropbox.com",
     "veed.io",
     "vimeo.com",
-    "1drv.ms"
+    "1drv.ms",
+    "files.fm",
+    "kick.com",
+    "kick.com",
+    "docs.google.com",
+    "cdn.steamusercontent.com"
   ],
 
   "_comentario_blacklist": "Trechos de URL que, mesmo parecendo um link, NAO servem como prova. Se 'Provas' so tiver links destes (ou nenhum link), o report e considerado INVALIDO.",
@@ -29,11 +35,13 @@
     "gamersclub.com.br/lobby/match",
     "gamersclub.com.br/player",
     "gamersclub.com.br/report",
-    "google.com/search",
-    "google.com",
     "bing.com",
     "steamcommunity.com",
-    "demos.gamersclub.com.br"
+    "demos.gamersclub.com.br",
+    "cheater",
+    "xit",
+    "Provas.com",
+    "mediafire.com"
   ],
 
   "_comentario_ambiguos": "Qualquer link que nao esteja nem na whitelist nem na blacklist cai aqui: o bot NAO decide sozinho, so sinaliza 'revisao manual' no log e pula o report. Ex: gamersclub.com.br/report/... ainda nao confirmado por voce.",
