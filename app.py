@@ -40,7 +40,7 @@ from tkinter import messagebox
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bot import browser, scraper, evidence, actions, storage
 
-VERSAO_ATUAL = "1.1"
+VERSAO_ATUAL = "1.2"
 
 def base_dir():
     """Captura o caminho correto dos arquivos (leitura do .exe)"""
@@ -551,7 +551,7 @@ class App(ctk.CTk):
 timeout /t 3 /nobreak > NUL
 del "{nome_exe_atual}"
 ren "novo_update.exe" "{nome_exe_atual}"
-start "" "{nome_exe_atual}"
+start /B "" "{nome_exe_atual}"
 del "%~f0"
 """
             with open(caminho_bat, "w") as f:
