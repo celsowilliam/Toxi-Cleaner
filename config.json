@@ -41,7 +41,8 @@
     "cheater",
     "xit",
     "Provas.com",
-    "mediafire.com"
+    "mediafire.com",
+   "cs.gamersclub.gg"
   ],
 
   "_comentario_ambiguos": "Qualquer link que nao esteja nem na whitelist nem na blacklist cai aqui: o bot NAO decide sozinho, so sinaliza 'revisao manual' no log e pula o report. Ex: gamersclub.com.br/report/... ainda nao confirmado por voce.",
