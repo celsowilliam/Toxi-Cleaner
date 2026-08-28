@@ -1,0 +1,9 @@
+{
+  "versao": "1.1",
+  "url_exe": "https://raw.githubusercontent.com/celsowilliam/Toxi-Cleaner/master/dist/gc_toxicidade_bot.exe",
+  "novidades": [
+    "Novo layout com 3 colunas padrão ao abrir",
+    "Links clicáveis nos cards abrindo no navegador padrão",
+    "Auto-save em tempo real de preferências"
+  ]
+}
