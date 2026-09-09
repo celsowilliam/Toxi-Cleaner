@@ -33,6 +33,9 @@
   "_comentario_blacklist": "Trechos de URL que, mesmo parecendo um link, NAO servem como prova. Se 'Provas' so tiver links destes (ou nenhum link), o report e considerado INVALIDO.",
   "blacklist_padroes": [
     "gamersclub.com.br/lobby/match",
+    "beta.gamersclub.com.br/lobby/match",
+    "gamersclub.com.br/lobby/partida",
+    "beta.gamersclub.com.br/lobby/partida",
     "gamersclub.com.br/player",
     "gamersclub.com.br/report",
     "bing.com",
@@ -42,7 +45,7 @@
     "xit",
     "Provas.com",
     "mediafire.com",
-   "cs.gamersclub.gg"
+    "cs.gamersclub.gg"
   ],
 
   "_comentario_ambiguos": "Qualquer link que nao esteja nem na whitelist nem na blacklist cai aqui: o bot NAO decide sozinho, so sinaliza 'revisao manual' no log e pula o report. Ex: gamersclub.com.br/report/... ainda nao confirmado por voce.",
